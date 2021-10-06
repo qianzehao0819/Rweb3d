@@ -1,0 +1,98 @@
+.L{
+    position: fixed;
+    left: 2%;
+    top: 30%;
+    
+    
+}
+.R{
+    position: fixed;
+    right: 2%;
+    top: 30%;
+    
+    
+}
+
+.changeLayout li{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    cursor:pointer;
+    margin-bottom:10px;
+    transition: 0.5s all;
+}
+
+.L li:hover{
+    transform: translateX(8%);
+}
+.R li:hover{
+    transform: translateX(-8%);
+}
+.changeLayout li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+}
+
+.changeLayout li::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+    filter:blur(30px)
+}
+
+.changeLayout li:nth-child(2)::before,
+.changeLayout li:nth-child(2)::after{
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+
+.changeLayout li:nth-child(3)::before,
+.changeLayout li:nth-child(3)::after{
+    background: linear-gradient(315deg,#4dff03,#00d0ff);
+}
+.changeLayout li:nth-child(4)::before,
+.changeLayout li:nth-child(4)::after{
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+}
+.changeLayout li:nth-child(5)::before,
+.changeLayout li:nth-child(5)::after{
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+   
+}
+.changeLayout li:nth-child(6)::before,
+.changeLayout li:nth-child(6)::after{
+    background: linear-gradient(315deg,#4dff03,#00d0ff);
+}
+.changeLayout li:nth-child(7)::before,
+.changeLayout li:nth-child(7)::after{
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+}
+.changeLayout li:nth-child(8)::before,
+.changeLayout li:nth-child(8)::after{
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+
+
+ .changeLayout li span{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background:rgba(0,0,0,0.6);  
+    z-index: 2;
+    text-align: center;
+} 
+
+
